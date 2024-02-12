@@ -7,7 +7,7 @@ public class Test {
         Scanner scanner = new Scanner(System.in);
         int countOfStudents = scanner.nextInt();
         getStudentCredentials(scanner, countOfStudents);
-        Student.calculateAverageScore();
+        StudentHelper.calculateAverageScore();
     }
 
     private static void getStudentCredentials(Scanner scanner, int countOfStudents) {

@@ -18,6 +18,6 @@ public class OutOfMemoryErrorExamples {
     }
 
     public static void main(String[] args) {
-        example2();
+        example1();
     }
 }

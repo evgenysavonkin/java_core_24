@@ -8,11 +8,6 @@ public class Student {
     private final String lastName;
     private double averageScore;
     private static int counter;
-    private static final List<Student> students;
-
-    static {
-        students = new ArrayList<>();
-    }
 
     public Student(String lastName, String firstName, double averageScore) {
         this.lastName = lastName;
@@ -24,17 +19,7 @@ public class Student {
     }
 
     private void addStudent() {
-        students.add(this);
-    }
-
-    protected static void calculateAverageScore() {
-        double avg = students.stream().mapToDouble(Student::getAverageScore).average().orElse(-1);
-        System.out.println(avg);
-        printStudentBelowAvgScore(avg);
-    }
-
-    private static void printStudentBelowAvgScore(double averageScore) {
-        students.stream().filter(s -> s.getAverageScore() < averageScore).forEach(System.out::println);
+        StudentHelper.addStudent(this);
     }
 
     public String getFirstName() {

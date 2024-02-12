@@ -91,4 +91,8 @@ public class TaskFromJoseph {
         }
         return -1;
     }
+
+    public static void main(String[] args) {
+        System.out.println(getLastFromCircleA(100, 2));
+    }
 }
