@@ -1,6 +1,7 @@
 package org.evgenysav.module13.task13;
 
 
+import java.util.LinkedList;
 import java.util.List;
 
 public class Main {
@@ -13,7 +14,7 @@ public class Main {
 
     private static void evaluateTaskUsingCustomLists(List<Integer> list) {
         long before = System.currentTimeMillis();
-        System.out.println("Answer: " + TaskFromJoseph.getLastFromCircle(1_000_000, 2, list));
+        System.out.println("Answer: " + TaskFromJoseph.getLastFromCircle(1_000_0, 2, list));
         System.out.println("Time consumed: " + (System.currentTimeMillis() - before));
     }
 }

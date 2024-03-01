@@ -1,5 +1,7 @@
 package org.evgenysav.module13.task13;
 
+import org.w3c.dom.ls.LSOutput;
+
 import java.util.AbstractList;
 import java.util.List;
 
@@ -32,6 +34,7 @@ public final class LinkedList<E> extends AbstractList<E> implements List<E> {
 
     @Override
     public E get(int index) {
+        System.out.println("index " + index);
         if (index >= 0 && index <= size - 1) {
             if (index < size / 2) {
                 Node<E> x = first;
